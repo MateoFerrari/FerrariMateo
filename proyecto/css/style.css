@@ -1,0 +1,14 @@
+h1 {
+    color:blue;
+background-color: yellow;
+font-size: 2rem;
+font-family: 'Times New Roman', Times, serif;
+    
+}
+
+h2 {
+    color:yellow;
+    background-color: blue;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

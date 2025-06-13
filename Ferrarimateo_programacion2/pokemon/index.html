@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokémon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 20px;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #b00;
+            font-size: 28px;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .teams {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .team {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 45%;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        #resultadosCombate {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #000;
+            color: white;
+            border: 1px solid #333;
+            border-radius: 5px;
+            max-width: 600px;
+            text-align: left;
+            font-size: 14px;
+        }
+        #contenedorGanadorEquipo {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #e0ffe0;
+            border: 1px solid #090;
+            border-radius: 5px;
+            max-width: 600px;
+            text-align: center;
+            display: none;
+        }
+        #contenedorGanadorEquipo h2 {
+            color: #090;
+        }
+        #resultadosDado1, #resultadosDado2 {
+            margin: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .imagen {
+            width: 120px;
+            margin: 10px 0;
+        }
+        #loadingMessage {
+            margin: 10px;
+            font-size: 16px;
+            color: #007bff;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Batalla Pokémon</h1>
+        <img class="imagen" src="https://iili.io/HsRo4vs.png" alt="Pokémon Logo">
+        
+        <div>
+            <button id="botonTirarDado1">Tirar Dados Equipo 1</button>
+            <button id="botonTirarDado2">Tirar Dados Equipo 2</button>
+        </div>
+        <div id="resultadosDado1"></div>
+        <div id="resultadosDado2"></div>
+        
+        <button id="botonGenerarEquipos" style="display: none;">Generar Equipos</button>
+        <button id="botonBatallar" style="display: none;">¡Batallar!</button>
+        <div id="loadingMessage">Cargando equipos...</div>
+    </div>
+
+    <div class="teams">
+        <div class="team">
+            <h2 id="TituloEquipoUno">Equipo 1</h2>
+            <ul id="listaEquipoUno"></ul>
+        </div>
+        <div class="team">
+            <h2 id="TituloEquipoDos">Equipo 2</h2>
+            <ul id="listaEquipoDos"></ul>
+        </div>
+    </div>
+
+    <div id="resultadosCombate"></div>
+    <div id="contenedorGanadorEquipo">
+        <h2 id="TituloEquipoGanador"></h2>
+        <ul id="listaEquipoGanador"></ul>
+    </div>
+
+    <script src="C:\Users\ferra\Downloads\tp_progra2\Ferrarimateo_programacion2\pokemon\js\pokemon.js"></script>
+</body>
+</html>
